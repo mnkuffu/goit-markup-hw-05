@@ -479,7 +479,7 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   padding: 8px;
-  gap 24px;
+  gap: 24px;
 }
 .footer-subscribe-input {
   border: 1px solid #ffffff;
