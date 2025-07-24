@@ -459,6 +459,9 @@ button {
 .footer-social-icon {
   fill: #f4f4fd;
 }
+.footer-subscribe {
+  margin: 0 0 0 80px;
+}
 .footer-subscribe-text {
   font-weight: 500;
   line-height: 1.5;
@@ -467,38 +470,33 @@ button {
   margin: 0 0 16px;
 }
 .fotter-form {
-  display: flex;
+  display: inline-flex;
   align-items: flex-start;
-  gap: 24px;
 }
-.footer-subscribe-label {
-  font-style: 12px;
+.footer-sent-label {
+  font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
   color: #ffffff;
   padding: 8px;
+}
+.footer-subscribe-input {
+  border: 1px solid #ffffff;
+  border-radius: 4px;
   width: 264px;
   height: 40px;
-  border: 1px solid #fff;
-  background-color: transparent;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  background-color: inherit;
+  margin-right: 24px;
 }
 .footer-subscribe-btn {
-  min-width: 165px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  cursor: pointer;
-  background-color: #4d5ae5;
-  border: none;
   border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-color: transparent;
+  cursor: pointer;
+  color: #ffffff;
+  text-align: center;
 }
-.footer-send-button {
-  margin-left: 16px;
-}
+
