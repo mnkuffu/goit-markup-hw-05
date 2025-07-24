@@ -511,6 +511,8 @@ button {
 .footer-send-icon {
   margin-left: 16px;
 }
+
+/* Modal window */
 .backdrop {
   background-color: rgba(46, 47, 66, 0.4);
   width: 100%;
@@ -523,12 +525,6 @@ button {
   pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.backdrop.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
 }
 .modal {
   position: absolute;
@@ -544,7 +540,6 @@ button {
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-btn {
   position: absolute;
   top: 24px;
@@ -562,24 +557,22 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #404bbf;
   border: none;
 }
-.modal-btn-icon {
-  fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .modal-btn:hover .modal-btn-icon,
 .modal-btn:focus .modal-btn-icon {
   fill: #ffffff;
 }
-.modal-slogan {
+.modal-btn-icon {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-text {
   max-width: 360px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -591,14 +584,13 @@ button {
 }
 .modal-form-label {
   display: block;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-bottom: 4px;
 }
-.modal-form-field {
+.modal-form-div {
   position: relative;
 }
 .modal-form-input {
@@ -616,16 +608,19 @@ button {
 .modal-form-input:focus {
   border-color: #4d5ae5;
 }
-/* .modal-form-icon {
+.modal-form-icon {
   fill: #2e2f42;
   position: absolute;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */
+}
 .modal-form-input:focus + .modal-form-icon {
   fill: #4d5ae5;
+}
+.modal-div-comment {
+  margin-bottom: 16px;
 }
 .modal-form-review {
   width: 100%;
@@ -637,7 +632,6 @@ button {
   border-radius: 4px;
   padding: 8px 16px;
   outline: transparent;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -646,18 +640,14 @@ button {
 .modal-form-review:focus {
   border-color: #4d5ae5;
 }
-.modal-form-wrapper-comment {
-  margin-bottom: 16px;
-}
 .modal-form-review::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
-.modal-form-wrapper-checkbox {
+.modal-wrapper-checkbox {
   margin-bottom: 24px;
 }
-.modal-form-agreement {
+.modal-form-agree {
   display: block;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
