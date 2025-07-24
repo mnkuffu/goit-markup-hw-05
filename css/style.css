@@ -477,6 +477,7 @@ button {
 .footer-subscribe-input {
   border: 1px solid #ffffff;
   border-radius: 4px;
+  font-size: 12px;
   width: 264px;
   height: 40px;
   background-color: inherit;
