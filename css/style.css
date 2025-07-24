@@ -470,7 +470,7 @@ button {
   margin: 0 0 16px;
 }
 .fotter-form {
-  display: inline-flex;
+  display: flex;
   align-items: flex-start;
 }
 .footer-sent-label {
@@ -479,6 +479,7 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   padding: 8px;
+  gap 24px;
 }
 .footer-subscribe-input {
   border: 1px solid #ffffff;
